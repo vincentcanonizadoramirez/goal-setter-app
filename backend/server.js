@@ -1,4 +1,5 @@
 const path = require('path');
+const cors = require('cors');
 const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv').config();
@@ -10,6 +11,11 @@ connectDB();
 
 const app = express();
 
+app.use(
+  cors({
+    origin: '*',
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
