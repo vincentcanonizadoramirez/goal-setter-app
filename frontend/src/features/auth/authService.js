@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Need proxy in package.json || "proxy": "http://localhost:5000",
-const API_URL = 'https://bored-erin-chipmunk.cyclic.cloud/api/users/';
+const API_URL = '/api/users/';
 
 // Register user
 const register = async (userData) => {
